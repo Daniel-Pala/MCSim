@@ -18,7 +18,7 @@ mode 4: one std::atomic counter for all threads
 
 `./bench.sh` runs mode 1 with 1-16 threads (5 runs each), `python plott.py` makes the plot.
 
-![speedup](accelerazione.png)
+<img src="accelerazione.png" width="450">
 
 Ryzen 7 5800H, 8 cores / 16 threads. Almost linear until 8 threads. At 9 it drops because one core gets two threads and everyone waits for it. After that it grows slowly since threads share cores.
 
